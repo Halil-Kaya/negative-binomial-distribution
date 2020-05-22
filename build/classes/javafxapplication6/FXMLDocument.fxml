@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="672.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="basariSayisi" layoutX="235.0" layoutY="95.0" />
+      <TextField fx:id="denemeSayisi" layoutX="235.0" layoutY="48.0" />
+      <TextField fx:id="basariOlasiligi" layoutX="540.0" layoutY="48.0" />
+      <Text fx:id="ex" layoutX="102.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="μ=E(X)= " />
+      <Text fx:id="variance" layoutX="384.0" layoutY="625.0" strokeType="OUTSIDE" strokeWidth="0.0" text="σ2=Var(X)= " />
+      <Text fx:id="ss" layoutX="660.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" σ=SD(X)= " />
+      <Text layoutX="135.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="deneme sayısı">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="141.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="başarı sayısı">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="441.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="başarı olasılığı">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="buton" layoutX="540.0" layoutY="95.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Çiz" />
+      <ScatterChart fx:id="scatterChart" layoutX="191.0" layoutY="162.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+    </children>
+</AnchorPane>
